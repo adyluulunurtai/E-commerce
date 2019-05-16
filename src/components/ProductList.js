@@ -11,7 +11,7 @@ class ProductList extends Component {
       <>
         <div calssname="py5">
           <div className="container">
-            <Title title="каталог" />
+            <Title name="наш    " title="каталог" />
             <div className="row" />
           </div>
         </div>
