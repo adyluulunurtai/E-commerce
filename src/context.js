@@ -8,11 +8,20 @@ class ProductProvider extends Component {
     products: storeProducts,
     detailProduct: detailProduct
   };
+  handleDetail = () => {
+    console.log("hello from detail");
+  };
+  addToCart = () => {
+    console.log("hello from addToCart");
+  };
+
   render() {
     return (
       <ProductContext.Provider
         value={{
-          ...this.state
+          ...this.state,
+          handleDetail: this.handleDetail,
+          addToCart: this.addToCart
         }}
       >
         {this.props.children}
