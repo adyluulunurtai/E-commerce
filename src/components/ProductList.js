@@ -8,6 +8,7 @@ class ProductList extends Component {
     products: storeProducts
   };
   render() {
+    console.log(this.state.products);
     return (
       <>
         <div calssname="py5">
