@@ -14,4 +14,4 @@ class ProductProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer;
 
-export default { ProductProvider, ProductConsumer };
+export { ProductProvider, ProductConsumer };
