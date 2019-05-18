@@ -5,9 +5,16 @@ import { ProductConsumer } from "../context";
 
 class Product extends Component {
   render() {
+    const { id, title, img, price, incart } = this.props.product;
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3">
-        <h3>HEllo from Product</h3>
+        <div className="card">
+          <div className="img-container p-5">
+            <Link to="/details">
+              <img src={img} alt="product" className="card-img-top" />
+            </Link>
+          </div>
+        </div>
       </ProductWrapper>
     );
   }
