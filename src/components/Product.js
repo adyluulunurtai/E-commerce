@@ -31,10 +31,10 @@ class Product extends Component {
             </button>
           </div>
           <div className="card-footer ">
-            <p className="align-self-center mb-0">{title}</p>
-            <h3 className="d-flex justify-content-right align-self-flex-end text-blue font-bold mb-0 float-right">
+            <p className="mb-0">{title}</p>
+            <h3 className=" text-blue font-bold mb-0 float-right">
               {price}
-              <span className="d-flex justify-content-flex-end">c.</span>
+              <span>c.</span>
             </h3>
           </div>
         </div>
