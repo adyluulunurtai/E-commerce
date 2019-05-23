@@ -62,15 +62,31 @@ const ProductWrapper = styled.div`
       background: rgba(247, 247, 247);
     }
   }
-  .img-container: {
+  .img-container {
     position: relative;
-    overflow hidden;
+    overflow: hidden;
   }
   .card-img-top{
     transition: all .5s linear;
   }
   .img-container:hover .card-img-top {
     transform: scale(1.2);
+  }
+  .cart-btn{
+    position:absolute;
+    right:0;
+    top:0;
+    padding:0.2rem 0.4rem
+    background: var(--lightBlue);
+    border:none;
+    color:var(--mainWhite);
+    font-size:1.4rem;
+    border-radius:  0  0  0 0.5rem;
+    transform:translate(100%,-100%);
+    transition: all .5s linear;
+  }
+  .img-container:hover .cart-btn{
+    transform:translate(0,0)
   }
 `;
 
