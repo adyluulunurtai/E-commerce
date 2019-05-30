@@ -24,7 +24,7 @@ class Product extends Component {
               {inCart ? (
                 <p className="text-capitalize mb-0" disabled>
                   {" "}
-                  В корзине
+                  Уже в корзине
                 </p>
               ) : (
                 <i className="fas fa-cart-plus" />
@@ -87,7 +87,7 @@ const ProductWrapper = styled.div`
     right:0;
     top:0;
     padding:0.2rem 0.4rem
-    background: var(--mainYellow);
+    background: var(--lightBlue);
     border:none;
     color:var(--mainDark);
     font-size:1.4rem;
@@ -100,6 +100,7 @@ const ProductWrapper = styled.div`
   }
   .cart-btn:hover{
     cursor:pointer;
+    background:var(--lightBlue);
     color:var(--mainWhite)
   }
 `;
